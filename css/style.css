@@ -1,5 +1,77 @@
+html {
+    box-sizing: border-box;
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  background: #121212;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: #eee
+}
+
+.masonProjects {
+    column-count: 4;
+    column-gap: 1em;
+    margin: 1.5em auto;
+    width: 1060px;
+}
+
+.item {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.item img:before {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    content: '';
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.item img:hover:before {
+    content: '';
+    background-color: orange;
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    opacity: 0.2;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 580px;
+    margin: 0 auto;
+}
+
+header nav ul li {
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
+
+.brandStatement {
+    display: block;
+    width: 50%;
+    margin: 100px auto 100px;
+}
+
+.brandStatement h1 {
+    text-align: center;
 }
