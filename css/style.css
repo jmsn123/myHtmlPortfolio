@@ -5,8 +5,11 @@ html {
 * {
     margin: 0;
     padding: 0;
-    background: #121212;
     color: #eee
+}
+
+body {
+    background-color: black;
 }
 
 .masonProjects {
@@ -21,32 +24,54 @@ html {
     margin: 0;
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 img {
     width: 100%;
     height: 100%;
-    padding: 0;
+    /* padding: 0; */
+    display: block;
 }
 
-.item img:before {
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    color: #f1f1f1;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: .7s ease;
+}
+
+.item:hover .text-overlay {
+    opacity: 1;
+}
+
+
+/* .item ::after {
     width: 100%;
     height: 50%;
     position: absolute;
     content: '';
     opacity: 0;
     transition: all .5s ease;
-}
+} */
 
-.item img:hover:before {
+
+/* .item :hover::after {
     content: '';
     background-color: orange;
-    background-size: cover;
     width: 100%;
     height: 50%;
     position: absolute;
     opacity: 0.2;
-}
+} */
 
 header nav ul {
     display: flex;
