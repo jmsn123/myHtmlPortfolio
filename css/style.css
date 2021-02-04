@@ -19,6 +19,13 @@ body {
     width: 1060px;
 }
 
+@media only screen and (min-width: 400px) {
+    .masonProjects {
+        column-count: 1;
+        width: 400px;
+    }
+}
+
 .item {
     display: inline-block;
     margin: 0;
@@ -81,6 +88,12 @@ header nav ul {
     margin: 0 auto;
 }
 
+@media only screen and (min-width: 400px) {
+    header nav ul {
+        width: 400px;
+    }
+}
+
 header nav ul li {
     flex-direction: row;
     justify-content: space-between;
@@ -106,4 +119,25 @@ header nav ul li a {
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
+}
+
+.contact .contact-form ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .contact-form ul li {
+    list-style-type: none;
+    flex-direction: none;
+    display: inline-block;
+    padding: 10px
+}
+
+.contact .contact-form ul li a {
+    text-decoration: none;
+}
+
+.contact header h1 {
+    text-align: center;
 }
